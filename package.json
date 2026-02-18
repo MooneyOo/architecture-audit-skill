@@ -1,0 +1,42 @@
+{
+  "name": "claude-code-skill-architecture-audit",
+  "version": "2.0.0",
+  "description": "Claude Code skill for comprehensive 10-phase codebase architecture audits with technical documentation and business-focused product overviews",
+  "keywords": [
+    "claude",
+    "claude-code",
+    "skill",
+    "architecture",
+    "audit",
+    "documentation",
+    "c4-diagrams",
+    "er-diagrams",
+    "product-overview"
+  ],
+  "author": "",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "files": [
+    "SKILL.md",
+    "README.md",
+    "SHARING-GUIDE.md",
+    "templates/**",
+    "references/**",
+    "scripts/**"
+  ],
+  "engines": {
+    "python": ">=3.8"
+  },
+  "claude-code": {
+    "skillVersion": "2.0.0",
+    "minClaudeCodeVersion": "1.0.0",
+    "phases": 10,
+    "outputs": [
+      "System-Architecture-Reference-[PROJECT].md",
+      "[PROJECT]-Product-Overview.md"
+    ]
+  }
+}
